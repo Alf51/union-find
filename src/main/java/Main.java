@@ -1,3 +1,4 @@
+import controlers.UserInputHandlerController;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,6 +7,7 @@ public class Main {
             args = new String[] {"lng.csv"};
         }
 
+        UserInputHandlerController.parseUserArgument(args);
         System.out.printf("Execution time %d seconds", (System.currentTimeMillis() - startProgramTime) / 1000);
     }
 }
