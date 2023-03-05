@@ -8,7 +8,8 @@ import java.util.*;
 
 public class UnionFindGroup {
     public static Set<String> getCorrectSetStringLine(File file) {
-        Set<String> SetLines = new HashSet<>();        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        Set<String> SetLines = new HashSet<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.matches(".*\".*\".*")) {

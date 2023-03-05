@@ -3,6 +3,10 @@ package view;
 import java.util.List;
 
 public class Display {
+    public void writeResult(List<List<String>> listGroup) {
+
+    }
+
     public static void printListGroup(List<List<String>> listGroup) {
         System.out.println("the number of groups with more than one element received: " + listGroup.size());
         System.out.println();
