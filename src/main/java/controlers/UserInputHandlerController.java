@@ -29,7 +29,7 @@ public class UserInputHandlerController {
         try {
             Set<String> setString = UnionFindGroup.getCorrectSetStringLine(file);
             List<List<String>> resultGroup = UnionFindGroup.getGroupsList(setString);
-            Display.printListGroup(resultGroup);
+            Display.writeResult(resultGroup);
         } catch (RuntimeException e) {
             System.out.println(e.getLocalizedMessage());
             System.out.println("Error during sorting");
