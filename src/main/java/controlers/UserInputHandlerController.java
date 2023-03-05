@@ -2,7 +2,6 @@ package controlers;
 
 import model.sortingTools.UnionFindGroup;
 import view.Display;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
