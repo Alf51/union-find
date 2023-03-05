@@ -8,19 +8,19 @@ import java.util.*;
 
 public class UnionFindGroup {
     public static Set<String> getCorrectSetStringLine(File file) {
-        Set<String> SetLines = new HashSet<>();
+        Set<String> setLines = new HashSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.matches(".*\".*\".*")) {
                     line = line.replace("\"", "");
-                    SetLines.add(line);
+                    setLines.add(line);
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return SetLines;
+        return setLines;
     }
 
     public static List<List<String>> getGroupsList(Set<String> lines) {
