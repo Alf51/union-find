@@ -38,8 +38,9 @@ public class UnionFindGroup {
 
                 if (currentValue.isEmpty()) {
                     continue;
-                } else if (groupingByWord.size() == i) {
+                } else if (groupingByWord.size() == i || groupingByWord.size() <= (i - 1)) {
                     groupingByWord.add(new HashMap<>());
+                    continue;
                 }
 
                 Map<String, Integer> valuesByGroupNumber = groupingByWord.get(i);
